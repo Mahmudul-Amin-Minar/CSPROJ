@@ -1,0 +1,30 @@
+GET https://localhost:7159/games
+
+###
+GET https://localhost:7159/games/1
+
+###
+POST https://localhost:7159/games
+Content-Type: application/json
+
+{
+    "name": "Minecraft II",
+    "genre": "Treasure",
+    "price": 19.99,
+    "releaseDate": "1992-07-15"
+}
+
+
+###
+PUT https://localhost:7159/games/1
+Content-Type: application/json
+
+{
+    "name": "Street Fighter II",
+    "genre": "Fighting",
+    "price": 9.99,
+    "releaseDate": "1992-07-15"
+}
+
+###
+DELETE https://localhost:7159/games/2
